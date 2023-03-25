@@ -23,8 +23,8 @@ export const ContactsList = ({ title }) => {
           <ContactsTitle>{title}</ContactsTitle>
           {filteredContacts.map(contact => (
             <ContactItem
-              key={contact.id}
-              id={contact.id}
+              key={contact._id}
+              id={contact._id}
               name={contact.name}
               number={contact.number}
             />
